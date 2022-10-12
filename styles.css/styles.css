@@ -90,6 +90,7 @@ header{
 
     .Desktop-menu a{
         font-weight: 600;
+        color: var(--text-color);
     }
 
     .Desktop-menu a:hover{
