@@ -37,6 +37,11 @@ body{
     }
 }
 
+.navbar{
+    width: 100%;
+    box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
+}
+
 
 header{
     width: 100%;
@@ -102,8 +107,57 @@ a:link{
     text-decoration: none;
 }
 
-.header-background-img img{
+.header-background-img{
     width: 100%;
+    text-align: center;
+    animation: myAnim2 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim2 {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(-48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(-26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(-13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(-6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 .header-web-background-img{
     display: none;
@@ -122,7 +176,55 @@ a:link{
         background-size: contain;
         background-position: center;
         padding-top: 100px;
+        animation: myAnim2 2s ease 0s 1 normal forwards;
     }
+
+    @keyframes myAnim2 {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(-48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(-26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(-13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(-6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
 }
 
 .header-content{
@@ -133,6 +235,54 @@ a:link{
     text-align: center;
     gap: 20px;
     padding: 30px 0;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(48px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(26px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(13px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 
 @media(min-width: 720px){
