@@ -1,3 +1,4 @@
+
 :root{
     --background-color: #ffffff;
     --icon-color: #8b7bef;
@@ -32,7 +33,7 @@ body{
 @media(min-width: 720px){
     body{
         font-family: 'Montserrat', sans-serif;
-        width: 85%;
+        width: 100%;
         margin: auto;
     }
 }
@@ -62,7 +63,7 @@ header{
 
 @media(min-width: 720px){
     .header-container{
-        width: 100%;
+        width: 85%;
         display: flex;
         justify-content: center;
         margin: auto;
@@ -452,6 +453,7 @@ h2{
     overflow-x: scroll;
 }
 
+
 @media(min-width: 720px){
     .cards{
         display: flex;
@@ -595,6 +597,8 @@ h2{
     justify-content: center;
     justify-items: center;
     gap: 1rem;
+    width: 85%;
+    margin: auto;
 }
 
 /*Inicia Footer*/
