@@ -16,66 +16,68 @@
     <link rel="stylesheet" href="/assets/styles/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
-            <div id="nav">
-                <a href="#close"><i class='bx bx-x btn-close'></i></a>
-                <ul class="Desktop-menu">
-                    <li>
-                        <a href="#home">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#about">Acerca de mi</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Mis Habilidades</a>
-                    </li>
-                    <li>
-                        <a href="#experience">Experiencia</a>
-                    </li>
-                    <li>
-                        <a href="#portafolio">Portafolio</a>
-                    </li>
-                    <li>
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-            <a href="#nav">
-                <i class='bx bx-menu bx-md btn_open mobile-menu'></i>
-            </a>
-        </nav>
-        <div class="header-container">
-            <div class="header-background-img">
-                <img src="/assets/Imágenes/photo mobile.png" alt="">
-            </div>
-            <div class="header-web-background-img">
-                <img src="/assets/Imágenes/photo desktop.png" alt="">
-            </div>
-            <div class="header-content">
-                <h1>Product Designer</h1>
-                <p class="header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eos!</p>
-                <title>Product Designer</title>
-                <div class="icon-mobile">
-                    <img class="icon-img" src="/assets/íconos/linkedin.svg" alt="">
-                    <img class="icon-img" src="/assets/íconos/instagram.svg" alt="">
-                    <img class="icon-img" src="/assets/íconos/twitter.svg" alt="">
+            <nav class="navbar grid--container">
+                <div id="nav" class="navbar__menu">
+                    <a href="#close"><i class="bx bx-x btn__close navbar__icon"></i></a>
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#home">Inicio</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#about">Acerca de Mí</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#projects">Mis Habilidades</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#contact">Experiencia</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#contact">Portafolio</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#contact">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-                <button class="btn">
-                    <span class="btn-icon">
-                        <img src="/assets/íconos/mail.svg" alt="">
-                        <span class="btn-text">Contáctame</span>
-                    </span>
-                </button>
-            </div>
-        </div>
+                <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+            </nav>
     </header>
     <main>
+        <section class="home">
+            <div class="header-container">
+                <div class="header-background-img">
+                    <img src="/assets/Imágenes/photo mobile.png" alt="">
+                </div>
+                <div class="header-web-background-img">
+                    <img src="/assets/Imágenes/photo desktop.png" alt="">
+                </div>
+                <div class="header-content">
+                    <h1>Product Designer</h1>
+                    <p class="header-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eos!</p>
+                    <title>Product Designer</title>
+                    <div class="icon-mobile">
+                        <img class="icon-img" src="/assets/íconos/linkedin.svg" alt="">
+                        <img class="icon-img" src="/assets/íconos/instagram.svg" alt="">
+                        <img class="icon-img" src="/assets/íconos/twitter.svg" alt="">
+                    </div>
+                    <button class="btn">
+                        <span class="btn-icon">
+                            <img src="/assets/íconos/mail.svg" alt="">
+                            <span class="btn-text">Contáctame</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
         <section class="about-me">
             <h2>Acerca de mí</h2>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nobis cum, adipisci, tempore quo error
-                quaerat atque, iusto amet fuga voluptate saepe nam dolorem accusantium. Deleniti at provident quo? Dolor quo
-                ex impedit excepturi ipsa praesentium ea ducimus error veritatis!</P>
+            <P>Un apasionado por el desarrollo Web, la musica estimula mi imaginación, me encanta hacer deporte, especialmente jugar
+            futbol, compartir en familia y amigos es de mis pasatiempos favoritos, disfruto escuchar a las demas personas y aprender
+            de su experiencia y estoy de acuerdo en que la imaginación es el limite para alcanzar cualquier objetivo de cualquier
+            naturaleza.</P>
         </section>
         <section class="skills">
             <h2>Mis Habilidades</h2>
