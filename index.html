@@ -17,8 +17,8 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
-            <nav class="navbar grid--container">
+        <nav>
+            <nav id="nav2" class="navbar grid--container">
                 <div id="nav" class="navbar__menu">
                     <a href="#close"><i class="bx bx-x btn__close navbar__icon"></i></a>
                     <ul class="navbar__list">
@@ -32,10 +32,10 @@
                             <a class="navbar__link" href="#projects">Mis Habilidades</a>
                         </li>
                         <li class="navbar__item">
-                            <a class="navbar__link" href="#contact">Experiencia</a>
+                            <a class="navbar__link" href="#experience">Experiencia</a>
                         </li>
                         <li class="navbar__item">
-                            <a class="navbar__link" href="#contact">Portafolio</a>
+                            <a class="navbar__link" href="#portafolio">Portafolio</a>
                         </li>
                         <li class="navbar__item">
                             <a class="navbar__link" href="#contact">Contacto</a>
@@ -46,7 +46,7 @@
             </nav>
     </header>
     <main>
-        <section class="home">
+        <section id="home" class="home">
             <div class="header-container">
                 <div class="header-background-img">
                     <img src="/assets/Imágenes/photo mobile.png" alt="">
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-me">
+        <section id="about" class="about-me">
             <h2>Acerca de mí</h2>
             <P>Un apasionado por el desarrollo Web, la musica estimula mi imaginación, me encanta hacer deporte, especialmente jugar
             futbol, compartir en familia y amigos es de mis pasatiempos favoritos, disfruto escuchar a las demas personas y aprender
@@ -193,7 +193,7 @@
     </main>
     <footer class="footer">
         <h2>Contacto</h2>
-        <div class="footer-content">
+        <div id="contact" class="footer-content">
             <div>
                 <img class="footer-img" src="/assets/íconos/phone.svg" alt="">
                 <h3>Número celular</h3>
@@ -216,6 +216,6 @@
     <script>
         AOS.init();
     </script>
-
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

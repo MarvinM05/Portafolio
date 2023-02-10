@@ -35,6 +35,9 @@ body {
   }
 }
 
+.box-shadow{
+  box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
+}
 
 .header {
   position: fixed;
@@ -55,11 +58,12 @@ body {
 
 .navbar {
   width: 100%;
-  box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
   height: 60px;
   display: flex;
   justify-content: end;
   align-items: center;
+  position: fixed;
+  transition: all ease-in-out 1s;
 }
 
 .grid--container {
@@ -67,6 +71,7 @@ body {
   display: flex;
   padding: 0 20px 0 0;
   background-color: var(--background-icon-color);
+  box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
 }
 
 @media (max-width: 768px) {
@@ -188,7 +193,7 @@ body {
 } */
 
 .home{
-  padding-top: 3.2rem;
+  padding-top: 3.3rem;
 }
 
 .header-container {
