@@ -691,6 +691,15 @@ h2 {
 .img-icon {
   width: 15px;
 }
+
+.bx-loader{
+  -webkit-animation: rotate-center 15s ease-in-out infinite both
+}
+
+.bx-bulb{
+  animation: Color 7s linear infinite;
+}
+
 .cards-text {
   font-size: 15px;
   padding-bottom: 10px;
