@@ -358,18 +358,19 @@ h2 {
 }
 
 .main__title{
-  animation: text-shadow-pop-bl 4s infinite alternate both;
+  animation: text-shadow-pop-bottom 4s infinite alternate both;
 }
-@keyframes text-shadow-pop-bl {
+@keyframes text-shadow-pop-bottom {
   0% {
     text-shadow: 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef;
-    -webkit-transform: translateX(0) translateY(0);
-            transform: translateX(0) translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
+
   100% {
-    text-shadow: -1px 1px #8b7bef, -2px 2px #8b7bef, -3px 3px #8b7bef, -4px 4px #8b7bef, -5px 5px #8b7bef, -6px 6px #8b7bef, -7px 7px #8b7bef, -8px 8px #8b7bef;
-    -webkit-transform: translateX(8px) translateY(-8px);
-            transform: translateX(8px) translateY(-8px);
+    text-shadow: 0 1px #8b7bef, 0 2px #8b7bef, 0 3px #8b7bef, 0 4px #8b7bef, 0 5px #8b7bef, 0 6px #8b7bef, 0 7px #8b7bef, 0 8px #8b7bef;
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
   }
 }
 
