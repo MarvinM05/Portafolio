@@ -542,7 +542,7 @@ h1 {
 #mail{
   position: absolute;
   bottom: 6px;
-  left: 100px;
+  left: 90px;
 }
 
 @media (min-width: 720px) {
