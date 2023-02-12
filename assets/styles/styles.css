@@ -516,7 +516,7 @@ h1 {
     justify-content: flex-start;
     width: 70%;
     margin: 0;
-    background-color: var(--btn-color);
+    background-color: var(--icon-color);
     height: 45px;
     padding-top: 10px;
     border: 0;
