@@ -866,8 +866,8 @@ h2 {
 }
 
 .bxs-heart {
-  color: var(--icon-color);
   animation: heart 3s cubic-bezier(0.12, 0, 0.39, 0) 0s infinite reverse backwards;
+  color: #8b7bef;
 }
 
 @keyframes heart {
@@ -901,6 +901,31 @@ h2 {
 }
 
 .love-content {
-  color: var(--icon-color);
+  animation: Color 7s linear infinite;
 }
 
+@keyframes Color {
+  0% {
+    color: #2b470e;
+  }
+
+  20% {
+    color: #e7a71d;
+  }
+
+  40% {
+    color: #FFCE54;
+  }
+
+  60% {
+    color: #e4573b;
+  }
+
+  80% {
+    color: #eb3c4e;
+  }
+
+  100% {
+    color: #683ed1;
+  }
+}
