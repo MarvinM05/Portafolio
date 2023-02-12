@@ -906,26 +906,26 @@ h2 {
 
 @keyframes Color {
   0% {
-    color: #2b470e;
+    color: #c69b18;
   }
 
   20% {
-    color: #e7a71d;
+    color: #daaa14;
   }
 
   40% {
-    color: #FFCE54;
+    color: #c69b18;
   }
 
   60% {
-    color: #e4573b;
+    color: #b18d1d;
   }
 
   80% {
-    color: #eb3c4e;
+    color: #9d7e21;
   }
 
   100% {
-    color: #683ed1;
+    color: #887025;
   }
 }
