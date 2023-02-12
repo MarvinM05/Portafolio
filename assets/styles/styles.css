@@ -536,6 +536,8 @@ span img {
   }
 }
 
+/*======Mis Habilidades=========*/
+
 .skills {
   width: 100%;
   display: flex;
@@ -636,10 +638,6 @@ span img {
   gap: 5px;
 }
 
-.img-icon {
-  width: 15px;
-}
-
 .bx-loader{
   -webkit-animation: rotate-center 15s ease-in-out infinite both
 }
@@ -693,7 +691,7 @@ span img {
   padding-bottom: 10px;
 }
 
-/*experience*/
+/*======Experience=======*/
 
 .experience {
   display: flex;
@@ -709,7 +707,6 @@ span img {
   display: flex;
   flex-direction: column;
 }
-
 @media (min-width: 720px) {
   .about-experience {
     display: flex;
@@ -724,7 +721,6 @@ span img {
   justify-content: space-between;
   padding: 0 15px 15px 15px;
 }
-
 @media (min-width: 720px) {
   .experience-content {
     display: flex;
@@ -787,7 +783,6 @@ span img {
   justify-items: center;
   text-align: center;
   padding: 40px 0;
-  /* color: var(--icon-color); */
 }
 
 .footer-content {
