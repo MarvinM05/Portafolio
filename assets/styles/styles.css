@@ -356,6 +356,24 @@ h2 {
     gap: 40px;
   }
 }
+
+.main__title{
+  animation: text-shadow-pop-bl 4s infinite alternate both;
+}
+@keyframes text-shadow-pop-bl {
+  0% {
+    text-shadow: 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef;
+    -webkit-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px 1px #8b7bef, -2px 2px #8b7bef, -3px 3px #8b7bef, -4px 4px #8b7bef, -5px 5px #8b7bef, -6px 6px #8b7bef, -7px 7px #8b7bef, -8px 8px #8b7bef;
+    -webkit-transform: translateX(8px) translateY(-8px);
+            transform: translateX(8px) translateY(-8px);
+  }
+}
+
+
 #insta{
   -webkit-animation: rotate-center 15s ease-in-out infinite both, Color 7s linear infinite;
 }
@@ -831,7 +849,7 @@ span img {
 }
 
 .bxl-whatsapp{
-  animation: bounce-in-top 4s infinite alternate both;
+  animation: bounce-in-top 3.5s infinite alternate both;
 }
 @keyframes bounce-in-top {
   0% {
@@ -915,6 +933,7 @@ span img {
     opacity: 0;
   }
 }
+
 .love {
   display: flex;
   flex-direction: row;
