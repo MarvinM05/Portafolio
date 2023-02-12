@@ -29,7 +29,7 @@
                             <a class="navbar__link" href="#about">Acerca de Mí</a>
                         </li>
                         <li class="navbar__item">
-                            <a class="navbar__link" href="#projects">Mis Habilidades</a>
+                            <a class="navbar__link" href="#skills">Mis Habilidades</a>
                         </li>
                         <li class="navbar__item">
                             <a class="navbar__link" href="#experience">Experiencia</a>
@@ -63,12 +63,15 @@
                         <img class="icon-img" src="/assets/íconos/instagram.svg" alt="">
                         <img class="icon-img" src="/assets/íconos/twitter.svg" alt="">
                     </div>
-                    <button class="btn">
+                    <div class="btn">
                         <span class="btn-icon">
-                            <img src="/assets/íconos/mail.svg" alt="">
-                            <span class="btn-text">Contáctame</span>
+                            <i id="mail" class='bx bx-envelope bx-md'></i>
+                            <span>
+                                <a href="mailto:merv360@gmail.com">Contáctame</a>
+                            </span>
+                            <!-- <span class="btn-text">Contáctame</span> -->
                         </span>
-                    </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -79,7 +82,7 @@
             de su experiencia y estoy de acuerdo en que la imaginación es el limite para alcanzar cualquier objetivo de cualquier
             naturaleza.</P>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>Mis Habilidades</h2>
             <div class="cards" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <div>
@@ -137,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="experience">
+        <section id="experience" class="experience">
             <h2>Experiencia</h2>
             <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="about-experience">
                 <div class="experience-content">
@@ -181,7 +184,7 @@
                 </div>
             </div>
         </section>
-        <section class="portafolio">
+        <section id="portafolio" class="portafolio">
             <h2>Portafolio</h2>
             <div class="portafolio-content" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <img src="/assets/Imágenes/ejemplo 2.png" alt="">
@@ -195,14 +198,19 @@
         <h2>Contacto</h2>
         <div id="contact" class="footer-content">
             <div>
-                <img class="footer-img" src="/assets/íconos/phone.svg" alt="">
+                <i class='bx bxl-whatsapp bx-lg footer-img'></i>
                 <h3>Número celular</h3>
-                <p>+(506) 84242458</p>
+                <span>
+                    <a class="contact-color" href="https://wa.me/+50684242458?text=Tu%20Mensaje%20De%20Texto"
+                    target="_blank">+506 84242458</a>
+                </span>
             </div>
             <div>
-                <img class="footer-img" src="/assets/íconos/mail.svg" alt="">
+                <i class='bx bx-envelope bx-lg footer-img'></i>
                 <h3>Email</h3>
-                <p>merv360@gmail.com</p>
+                <span>
+                    <a class="contact-color" href="mailto:merv360@gmail.com">merv360@gmail.com</a>
+                </span>
             </div>
         </div>
         <div class="love">

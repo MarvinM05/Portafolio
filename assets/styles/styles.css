@@ -12,6 +12,7 @@
   margin: 0;
 }
 
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -38,6 +39,10 @@ body {
 
 .box-shadow{
   box-shadow: 0 1px 4px hsl(0deg 4% 15% / 10%);
+}
+
+a{
+  color: var(--background-color);
 }
 
 .header {
@@ -322,6 +327,7 @@ li{
 @media (min-width: 720px) {
   .header-background-img {
     max-width: 50%;
+    height: 64vh;
   }
   /* .header-web-background-img {
     width: 75%;
@@ -503,9 +509,16 @@ h1 {
   margin: auto;
   gap: 15px;
   padding-top: 10px;
-  border: 0;
-  cursor: pointer;
+  position: relative;
 }
+
+#mail{
+  position: absolute;
+  left: 76px;
+  bottom: 6px;
+  color: var(--background-color);
+}
+
 
 @media (min-width: 720px) {
   .btn {
@@ -522,17 +535,17 @@ h1 {
   }
 }
 
-.btn-icon {
-  display: flex;
-  margin: auto;
-  gap: 26px;
-  justify-content: center;
-  justify-items: center;
+.contact-color{
+ color: var(--tittle-color);
 }
 
-.btn-icon img {
-  padding-bottom: 10px;
+.btn-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 26px;
 }
+
 
 .icon-img {
   background-color: var(--icon-color);
@@ -549,6 +562,7 @@ p {
   padding: 10px;
 }
 
+
 span img {
   width: 23px;
 }
@@ -557,6 +571,7 @@ span img {
   padding-top: 3px;
   font-size: 16px;
   letter-spacing: 1px;
+  color: var(--background-color);
 }
 
 /*main incio */
@@ -787,6 +802,7 @@ h2 {
   justify-items: center;
   text-align: center;
   padding: 40px 0;
+  /* color: var(--icon-color); */
 }
 
 .footer-content {
@@ -810,6 +826,7 @@ h2 {
   width: 80px;
   border-radius: 50%;
   padding: 15px;
+  color: var(--icon-color);
 }
 
 @media (min-width: 720px) {

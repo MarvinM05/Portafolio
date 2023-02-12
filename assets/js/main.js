@@ -14,6 +14,23 @@ window.addEventListener("scroll", function () {
     ubicacionPrincipal = ubicacionActual
 });
 
+
+// const formulario = document.querySelector("#form");
+// const sendForm = document.querySelector("#mail");
+
+// formulario.addEventListener("submit", handleSubmit);
+
+// function handleSubmit(e) {
+//   e.preventDefault();
+//   const form = new FormData(this);
+//   sendForm.setAttribute(
+//     "href",
+//     `mailto:test@correo.com?subject=${form.get("name")} - ${form.get(
+//       "subject"
+//     )}&body=${form.get("message")}`
+//   );
+//   sendForm.click();
+// }
 // let lastKnownScrollPosition = 0;
 // let ticking = false;
 
