@@ -783,6 +783,20 @@ span img {
   justify-items: center;
   text-align: center;
   padding: 40px 0;
+  width: 85%;
+  margin: auto;
+}
+@media (min-width: 720px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 40px 0;
+    width: 85%;
+    margin: auto;
+  }
 }
 
 .footer-content {
