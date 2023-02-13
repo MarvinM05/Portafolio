@@ -703,6 +703,23 @@ span img {
   }
 }
 
+.bxl-javascript{
+  animation: flip-out-ver-left 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate both;
+}
+@keyframes flip-out-ver-left {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotateY(-70deg);
+    transform: rotateY(-70deg);
+    opacity: 0;
+  }
+}
+
 .cards-text {
   font-size: 15px;
   padding-bottom: 10px;
