@@ -814,7 +814,19 @@ span img {
   width: 85%;
   margin: auto;
 }
-
+@media (min-width: 720px) {
+  .portafolio-content {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-auto-rows: 17.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    width: 85%;
+    margin: auto;
+  }
+}
 /*Inicia Footer*/
 
 .footer {
