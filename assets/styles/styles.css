@@ -885,33 +885,15 @@ span img {
   }
 }
 
-.bxl-whatsapp{
-  animation: ping 3.5s infinite alternate both;
+.bxl-whatsapp {
+  margin-bottom: 0.6rem;
 }
 
 
 .bx-envelope{
-  animation: ping 3.5s infinite alternate both;
+  margin-bottom: 0.6rem;
 }
-@keyframes ping {
-  0% {
-    -webkit-transform: scale(0.2);
-    transform: scale(0.2);
-    opacity: 0.8;
-  }
 
-  80% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: scale(2.2);
-    transform: scale(2.2);
-    opacity: 0;
-  }
-}
 
 .love {
   display: flex;
