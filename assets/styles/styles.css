@@ -481,24 +481,14 @@ h2 {
 }
 
 .btn-icon {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-items: center;
+  align-items: center;
   gap: 10px;
-}
-
-#mail{
-  position: absolute;
-  bottom: 6px;
-  left: 85px;
-}
-
-@media (min-width: 720px) {
-  #mail {
-    bottom: 6px;
-    left: 65px;
-  }
 }
 
 @media (min-width: 720px) {
