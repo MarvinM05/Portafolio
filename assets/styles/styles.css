@@ -1,11 +1,12 @@
 :root {
   --background-color: #ffffff;
-  --icon-color: #8b7bef;
+  --icon-color: #7d8e95;
   --btn-color: #5d3bef;
   --background-card-color: #f9f6ff;
   --tittle-color: #222222;
   --text-color: #423f40;
   --background-icon-color: #f9f5f2;
+  --main-btn: #344648;
 }
 * {
   padding: 0;
@@ -43,13 +44,17 @@ body {
 }
 
 .box-shadow2{
-  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.08),
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.3),
       15px 20px 20px rgba(0, 0, 0, 0.07);
 }
 
-a {
+a, .bxl-amazon, .bxl-airbnb, .bxl-google {
   text-decoration: none;
-  color: var(--background-color);
+  color: var(--main-btn);
+}
+
+.icon-size{
+  font-size: 4.9rem;
 }
 
 li {
@@ -61,8 +66,16 @@ h1 {
   color: var(--tittle-color);
 }
 h2 {
-  color: var(--tittle-color);
+  color: var(--main-btn);
   padding: 12px;
+}
+
+h3{
+  color: var(--main-btn);
+}
+
+img{
+  color: var(--main-btn);
 }
 
 .header {
@@ -178,7 +191,7 @@ h2 {
 }
 
 .navbar__link {
-  color: #111;
+  color: var(--main-btn);
   font-size: 1.2rem;
   font-weight: 600;
   transition: color .3s
@@ -363,53 +376,40 @@ h2 {
   }
 }
 
-.main__title{
-  animation: text-shadow-pop-bottom 4s infinite alternate both;
-}
-@keyframes text-shadow-pop-bottom {
-  0% {
-    text-shadow: 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef, 0 0 #8b7bef;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-
-  100% {
-    text-shadow: 0 1px #8b7bef, 0 2px #8b7bef, 0 3px #8b7bef, 0 4px #8b7bef, 0 5px #8b7bef, 0 6px #8b7bef, 0 7px #8b7bef, 0 8px #8b7bef;
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
+.main__title {
+  color: var(--main-btn);
 }
 
-
-#insta{
-  -webkit-animation: rotate-center 15s ease-in-out infinite both, Color 7s linear infinite;
+@media (min-width: 720px) {
+  .main__title {
+      color: var(--main-btn);
+      animation: text-pop-up-bottom 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+      margin-bottom: 3rem;
+    }
+    @keyframes text-pop-up-bottom {
+      0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+      }
+  
+      100% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+      }
+    }
 }
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
 
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+
+.bxl-linkedin-square, .bxl-instagram, .bxl-twitter{
+  color: var(--main-btn);
 }
 
-#linkedin{
-  -webkit-animation: rotate-center2 15s ease-in-out infinite reverse both, Color 7s linear infinite;
-}
-@-webkit-keyframes rotate-center2 {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 
 @media (min-width: 720px) {
   h1 {
@@ -446,13 +446,18 @@ h2 {
   }
 }
 
+.drop{
+  position: relative;
+  border-radius: 50%;
+}
+
 .btn {
   display: flex;
   justify-content: center;
   justify-items: center;
   text-align: center;
   width: 85%;
-  background-color: var(--icon-color);
+  background-color: var(--main-btn);
   height: 50px;
   margin: auto;
   gap: 15px;
@@ -467,11 +472,12 @@ h2 {
     justify-content: flex-start;
     width: 70%;
     margin: 0;
-    background-color: var(--icon-color);
+    background-color: var(--main-btn);
     height: 45px;
     padding-top: 10px;
     border: 0;
     cursor: pointer;
+    min-width: 300px;
   }
 }
 
@@ -504,7 +510,6 @@ h2 {
 }
 
 .icon-img {
-  background-color: var(--icon-color);
   border-radius: 50%;
 }
 
@@ -898,7 +903,7 @@ span img {
 
 .bxs-heart {
   -webkit-animation: heartbeat 2.5s ease-in-out infinite both;
-  color: #8b7bef;
+  color: var(--main-btn);
 }
 @-webkit-keyframes heartbeat {
   from {
