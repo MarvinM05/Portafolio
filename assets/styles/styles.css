@@ -234,12 +234,12 @@ h2 {
   width: 95%;
   height: 56vh;
   text-align: center;
-  background-image: url(/assets/Imágenes/20220226_114654.jpg);
+  background-image: url(/assets/Imágenes/20230413_152214.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: auto;
   padding-top: 3rem;
-  animation: myAnim2 2s ease 0s 1 normal forwards;
+  animation: myAnim2 3s ease 0s 1 normal forwards;
 }
 @keyframes myAnim2 {
   0% {
@@ -291,6 +291,7 @@ h2 {
   .header-background-img {
     max-width: 50%;
     height: 64vh;
+    background-image: url(/assets/Imágenes/20220226_114654.jpg);
   }
 }
 
@@ -302,7 +303,7 @@ h2 {
   text-align: center;
   gap: 15px;
   padding: 30px 0;
-  animation: myAnim 2s ease 0s 1 normal forwards;
+  animation: myAnim 3s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnim {
