@@ -827,6 +827,8 @@ span img {
 .ecommerce{
   display: flex;
   height: 256px;
+  width: 343px;
+  overflow: hidden;
 }
 
 /*Inicia Footer*/
